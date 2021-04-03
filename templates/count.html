@@ -1,0 +1,10 @@
+<h1> There are {{count}} words in your text </h1>
+<h1> Original {{ wordd }} </h1>
+{{ fulltext }}
+<h1>Most common word: {{ topword }} = {{ topfreq }}</h1>
+<p>get back home <input type="button" onclick="window.location.href='{% url 'home' %}';" value="here" /></p>
+<h1>Check out this list of all the words</h1>
+{% for word, num in sortedlist %}
+    {{ word }} : {{num}}
+    <br/>
+{% endfor %}

@@ -1,0 +1,8 @@
+<h1>This is HTML, fam!!</h1>
+<form action="{% url 'count'%}">
+    <textarea cols="40" rows="5" name="fulltext"></textarea>
+    <br/>
+    <input type="submit" value="Count!" />
+</form>
+<br/>
+<input type="button" onclick="window.location.href='{% url 'about' %}';" value="about" />
